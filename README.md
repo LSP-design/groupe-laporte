@@ -67,7 +67,7 @@ Copier `.env.local.example` vers `.env.local` et remplir les valeurs :
 | `NEXT_PUBLIC_SITE_URL` | URL publique du site |
 | `RESEND_API_KEY` | Clé API Resend — requise pour que le formulaire de contact envoie un courriel |
 | `CONTACT_FROM_EMAIL` | Optionnel — adresse d'expédition (doit appartenir à un domaine vérifié dans Resend) |
-| `CONTACT_TO_EMAIL` | Optionnel — adresse qui reçoit les soumissions (défaut : `info@groupelaporte.ca`) |
+| `CONTACT_TO_EMAIL` | Optionnel — adresse qui reçoit les soumissions (défaut : `jlaporte@groupelaporte.ca`) |
 
 ## Intégration email (formulaire de contact)
 

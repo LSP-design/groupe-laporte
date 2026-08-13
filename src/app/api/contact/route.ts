@@ -50,7 +50,7 @@ export async function POST(request: NextRequest) {
       from:
         process.env.CONTACT_FROM_EMAIL ||
         "Site Groupe Laporte <onboarding@resend.dev>",
-      to: [process.env.CONTACT_TO_EMAIL || "info@groupelaporte.ca"],
+      to: [process.env.CONTACT_TO_EMAIL || "jlaporte@groupelaporte.ca"],
       replyTo: email,
       subject: `Nouveau message de ${name} — ${service || "Contact général"}`,
       html: `
