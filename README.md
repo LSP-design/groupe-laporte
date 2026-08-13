@@ -65,16 +65,17 @@ Copier `.env.local.example` vers `.env.local` et remplir les valeurs :
 | Variable | Description |
 |---|---|
 | `NEXT_PUBLIC_SITE_URL` | URL publique du site |
-| `RESEND_API_KEY` | Clé API Resend pour les emails |
+| `RESEND_API_KEY` | Clé API Resend — requise pour que le formulaire de contact envoie un courriel |
+| `CONTACT_FROM_EMAIL` | Optionnel — adresse d'expédition (doit appartenir à un domaine vérifié dans Resend) |
+| `CONTACT_TO_EMAIL` | Optionnel — adresse qui reçoit les soumissions (défaut : `info@groupelaporte.ca`) |
 
 ## Intégration email (formulaire de contact)
 
-Le formulaire de contact envoie les données à `/api/contact`. Pour activer l'envoi d'emails réels :
+Le formulaire de contact (`/api/contact`) envoie un courriel via [Resend](https://resend.com) à chaque soumission. Sans `RESEND_API_KEY` configurée, l'API retourne une erreur explicite au lieu de faire semblant que l'envoi a réussi.
 
-1. Installer Resend : `npm install resend`
-2. Créer un compte sur [resend.com](https://resend.com)
-3. Ajouter `RESEND_API_KEY` dans `.env.local`
-4. Décommenter le code Resend dans `src/app/api/contact/route.ts`
+1. Créer un compte sur [resend.com](https://resend.com) (gratuit jusqu'à 3 000 courriels/mois)
+2. Ajouter `RESEND_API_KEY` dans `.env.local` (local) ou dans les variables d'environnement de l'hébergeur (production)
+3. Pour envoyer depuis `noreply@groupelaporte.ca` plutôt que `onboarding@resend.dev` : vérifier le domaine `groupelaporte.ca` dans Resend (ajout d'enregistrements DNS), puis définir `CONTACT_FROM_EMAIL`
 
 ## Déploiement Vercel
 
