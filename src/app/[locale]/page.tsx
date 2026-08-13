@@ -1,6 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import Hero from "@/components/sections/Hero";
+import TeamAvatar from "@/components/ui/TeamAvatar";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight, CheckCircle2, Quote, Star } from "lucide-react";
 
@@ -213,28 +214,34 @@ export default async function HomePage({
                 role: t("team_preview.jean_role"),
                 desc: t("team_preview.jean_desc"),
                 initials: "JL",
+                photo: undefined as string | undefined,
               },
               {
                 name: "Jean-François Brault",
                 role: t("team_preview.jf_role"),
                 desc: t("team_preview.jf_desc"),
                 initials: "JFB",
+                photo: undefined as string | undefined,
               },
               {
                 name: "Kathryn Peterson",
                 role: t("team_preview.kathryn_role"),
                 desc: t("team_preview.kathryn_desc"),
                 initials: "KP",
+                photo: undefined as string | undefined,
               },
             ].map((member) => (
               <div
                 key={member.name}
                 className="text-center group"
               >
-                <div className="w-24 h-24 rounded-full bg-brand-navy flex items-center justify-center mx-auto mb-5 group-hover:bg-brand-gold transition-colors duration-300">
-                  <span className="font-serif text-xl font-bold text-white">
-                    {member.initials}
-                  </span>
+                <div className="mx-auto mb-5">
+                  <TeamAvatar
+                    name={member.name}
+                    initials={member.initials}
+                    photo={member.photo}
+                    className="w-24 h-24 rounded-full mx-auto group-hover:bg-brand-gold transition-colors duration-300"
+                  />
                 </div>
                 <h3 className="font-serif text-xl font-bold text-brand-navy mb-1">
                   {member.name}

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Phone, Mail, MapPin, Clock, CheckCircle2, Send } from "lucide-react";
 
 export default function ContactPage() {
@@ -252,6 +253,17 @@ export default function ContactPage() {
                         </>
                       )}
                     </button>
+
+                    <p className="text-xs text-gray-400 text-center">
+                      {t("form_consent_pre")}{" "}
+                      <Link
+                        href="/confidentialite"
+                        className="underline hover:text-brand-navy"
+                      >
+                        {t("form_consent_link")}
+                      </Link>
+                      .
+                    </p>
                   </form>
                 </div>
               )}

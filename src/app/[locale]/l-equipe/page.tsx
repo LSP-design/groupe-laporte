@@ -1,5 +1,6 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import TeamAvatar from "@/components/ui/TeamAvatar";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
 export async function generateMetadata({
@@ -29,6 +30,7 @@ export default async function TeamPage({
     t("jean_cred_2"),
     t("jean_cred_3"),
     t("jean_cred_4"),
+    t("jean_cred_5"),
   ];
 
   return (
@@ -52,11 +54,12 @@ export default async function TeamPage({
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 items-start">
             {/* Avatar */}
             <div className="lg:col-span-2 flex flex-col items-center lg:items-start">
-              <div className="w-48 h-48 rounded-2xl bg-brand-navy flex items-center justify-center shadow-2xl mb-6">
-                <span className="font-serif text-5xl font-bold text-white">
-                  JL
-                </span>
-              </div>
+              <TeamAvatar
+                name="Jean Laporte"
+                initials="JL"
+                className="w-48 h-48 rounded-2xl mb-6"
+                textClassName="text-5xl"
+              />
               <h2 className="font-serif text-3xl font-bold text-brand-navy mb-1">
                 Jean Laporte
               </h2>
@@ -132,11 +135,12 @@ export default async function TeamPage({
             {/* Jean-François */}
             <div className="bg-brand-cream rounded-2xl p-8">
               <div className="flex items-start gap-5 mb-5">
-                <div className="w-16 h-16 rounded-xl bg-brand-navy flex-shrink-0 flex items-center justify-center">
-                  <span className="font-serif text-lg font-bold text-white">
-                    JFB
-                  </span>
-                </div>
+                <TeamAvatar
+                  name="Jean-François Brault"
+                  initials="JFB"
+                  className="w-16 h-16 rounded-xl"
+                  textClassName="text-lg"
+                />
                 <div>
                   <h3 className="font-serif text-xl font-bold text-brand-navy">
                     Jean-François Brault
@@ -154,11 +158,12 @@ export default async function TeamPage({
             {/* Kathryn */}
             <div className="bg-brand-cream rounded-2xl p-8">
               <div className="flex items-start gap-5 mb-5">
-                <div className="w-16 h-16 rounded-xl bg-brand-navy flex-shrink-0 flex items-center justify-center">
-                  <span className="font-serif text-lg font-bold text-white">
-                    KP
-                  </span>
-                </div>
+                <TeamAvatar
+                  name="Kathryn Peterson"
+                  initials="KP"
+                  className="w-16 h-16 rounded-xl"
+                  textClassName="text-lg"
+                />
                 <div>
                   <h3 className="font-serif text-xl font-bold text-brand-navy">
                     Kathryn Peterson

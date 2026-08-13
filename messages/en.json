@@ -100,7 +100,7 @@
   "team_page": {
     "title": "Our Team",
     "subtitle": "Experts dedicated to your success",
-    "jean_bio_1": "Jean Laporte is the Founder and President of Groupe Laporte and holds the designation of Master Corporate Executive Coach (ACEC). Trained at Harvard University and Columbia University, he brings a unique perspective combining academic rigor with exceptional field experience.",
+    "jean_bio_1": "Jean Laporte founded Groupe Laporte in 2011. Founder and President of the firm, he holds the designation of Master Corporate Executive Coach (ACEC). Trained at Harvard University and Columbia University, he brings a unique perspective combining academic rigor with exceptional field experience.",
     "jean_bio_2": "His business career is remarkable: Vice-President at Apple Canada, National Vice-President of Sales at Fido, and President of Eastern Canada at Rogers with over 4,000 employees under his leadership. This top-level executive experience gives him unmatched credibility with his clients.",
     "jean_bio_3": "He is also the author of «Laporte de la réussite», a reference work for Quebec's business leaders. His mission: to improve the business world, one leader at a time.",
     "jean_credentials": "Certifications & Training",
@@ -108,6 +108,7 @@
     "jean_cred_2": "Executive training — Harvard University",
     "jean_cred_3": "Executive training — Columbia University",
     "jean_cred_4": "Author «Laporte de la réussite»",
+    "jean_cred_5": "Member, YPO (Young Presidents' Organization)",
     "career_apple": "Vice-President",
     "career_fido": "National VP of Sales",
     "career_rogers": "President, Eastern Canada\n(4,000+ employees)",
@@ -247,6 +248,8 @@
     "form_submit": "Send Message",
     "form_sending": "Sending...",
     "form_error": "An error occurred. Please try again or contact us directly.",
+    "form_consent_pre": "By submitting this form, you agree to our",
+    "form_consent_link": "privacy policy",
     "select_service": "Select a service",
     "service_consultation": "Consultation & Coaching",
     "service_cape": "CAPE Forum",
@@ -260,5 +263,21 @@
     "info_phone": "1 514 400-0671",
     "info_email": "info@groupelaporte.ca",
     "info_hours": "Monday – Friday: 9am – 5pm"
+  },
+  "privacy_page": {
+    "title": "Privacy Policy",
+    "subtitle": "How we handle your personal information",
+    "updated": "Last updated: August 13, 2026",
+    "intro": "Groupe Laporte (\"we\") is committed to protecting the personal information of this site's visitors, in accordance with Quebec's Act Respecting the Protection of Personal Information in the Private Sector (Law 25).",
+    "collecte_title": "Information We Collect",
+    "collecte_text": "We only collect the information you voluntarily provide through our contact form: name, email address, phone number, company name, service of interest, and message. This site does not use tracking cookies or third-party analytics tools.",
+    "utilisation_title": "How We Use Your Information",
+    "utilisation_text": "The information collected is used solely to respond to your request and follow up on your file. We do not sell or share your personal information with third parties for commercial purposes.",
+    "conservation_title": "Retention",
+    "conservation_text": "Your information is kept only as long as necessary to respond to your request, then securely destroyed or anonymized.",
+    "droits_title": "Your Rights",
+    "droits_text": "You may request access to, correction of, or deletion of your personal information at any time by contacting us at the address below.",
+    "contact_title": "Contact Us",
+    "contact_text": "For any question about this policy or your personal information, contact us at info@groupelaporte.ca or 1 514 400-0671."
   }
 }

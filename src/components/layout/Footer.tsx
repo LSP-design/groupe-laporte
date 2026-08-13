@@ -126,9 +126,17 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-white/50 text-xs">
-            {t("footer.copyright", { year: new Date().getFullYear() })}
-          </p>
+          <div className="flex items-center gap-4">
+            <p className="text-white/50 text-xs">
+              {t("footer.copyright", { year: new Date().getFullYear() })}
+            </p>
+            <Link
+              href="/confidentialite"
+              className="text-white/50 hover:text-white text-xs transition-colors"
+            >
+              {t("privacy_page.title")}
+            </Link>
+          </div>
           <p className="text-white/30 text-xs italic">
             {t("footer.description")}
           </p>

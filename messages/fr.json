@@ -100,7 +100,7 @@
   "team_page": {
     "title": "Notre équipe",
     "subtitle": "Des experts dévoués à votre succès",
-    "jean_bio_1": "Jean Laporte est Président-fondateur du Groupe Laporte et détient la désignation de Master Corporate Executive Coach (ACEC). Formé à Harvard University et Columbia University, il apporte une perspective unique qui allie rigueur académique et expérience terrain exceptionnelle.",
+    "jean_bio_1": "Jean Laporte a fondé le Groupe Laporte en 2011. Président-fondateur de la firme, il détient la désignation de Master Corporate Executive Coach (ACEC). Formé à Harvard University et Columbia University, il apporte une perspective unique qui allie rigueur académique et expérience terrain exceptionnelle.",
     "jean_bio_2": "Son parcours en affaires est remarquable : Vice-Président chez Apple Canada, Vice-Président national des ventes chez Fido, et Président de l'est du Canada chez Rogers avec plus de 4 000 employés sous sa gouverne. Cette expérience de direction au plus haut niveau lui confère une crédibilité incomparable auprès de ses clients.",
     "jean_bio_3": "Il est également l'auteur de «Laporte de la réussite», un ouvrage de référence pour les leaders québécois. Sa mission : améliorer le monde des affaires, un leader à la fois.",
     "jean_credentials": "Certifications & formations",
@@ -108,6 +108,7 @@
     "jean_cred_2": "Formation executive — Harvard University",
     "jean_cred_3": "Formation executive — Columbia University",
     "jean_cred_4": "Auteur «Laporte de la réussite»",
+    "jean_cred_5": "Membre, YPO (Young Presidents' Organization)",
     "career_apple": "Vice-Président",
     "career_fido": "VP national des ventes",
     "career_rogers": "Président Est du Canada\n(4 000+ employés)",
@@ -247,6 +248,8 @@
     "form_submit": "Envoyer le message",
     "form_sending": "Envoi en cours...",
     "form_error": "Une erreur s'est produite. Veuillez réessayer ou nous contacter directement.",
+    "form_consent_pre": "En soumettant ce formulaire, vous acceptez notre",
+    "form_consent_link": "politique de confidentialité",
     "select_service": "Sélectionnez un service",
     "service_consultation": "Consultation & Coaching",
     "service_cape": "Forum CAPE",
@@ -260,5 +263,21 @@
     "info_phone": "1 514 400-0671",
     "info_email": "info@groupelaporte.ca",
     "info_hours": "Lundi – Vendredi : 9h – 17h"
+  },
+  "privacy_page": {
+    "title": "Politique de confidentialité",
+    "subtitle": "Comment nous traitons vos renseignements personnels",
+    "updated": "Dernière mise à jour : 13 août 2026",
+    "intro": "Groupe Laporte (« nous ») s'engage à protéger les renseignements personnels des visiteurs de ce site, conformément à la Loi sur la protection des renseignements personnels dans le secteur privé (Loi 25, Québec).",
+    "collecte_title": "Renseignements que nous recueillons",
+    "collecte_text": "Nous recueillons uniquement les renseignements que vous nous transmettez volontairement par notre formulaire de contact : nom, adresse courriel, numéro de téléphone, nom d'entreprise, service d'intérêt et message. Ce site n'utilise aucun témoin (cookie) de suivi ni outil d'analyse tiers.",
+    "utilisation_title": "Utilisation de vos renseignements",
+    "utilisation_text": "Les renseignements recueillis servent exclusivement à répondre à votre demande et à assurer le suivi de votre dossier. Nous ne vendons ni ne partageons vos renseignements personnels avec des tiers à des fins commerciales.",
+    "conservation_title": "Conservation",
+    "conservation_text": "Vos renseignements sont conservés uniquement le temps nécessaire pour répondre à votre demande, puis détruits ou anonymisés de façon sécuritaire.",
+    "droits_title": "Vos droits",
+    "droits_text": "Vous pouvez en tout temps demander l'accès, la rectification ou la suppression de vos renseignements personnels en nous contactant à l'adresse ci-dessous.",
+    "contact_title": "Nous joindre",
+    "contact_text": "Pour toute question concernant cette politique ou vos renseignements personnels, contactez-nous à info@groupelaporte.ca ou au 1 514 400-0671."
   }
 }
