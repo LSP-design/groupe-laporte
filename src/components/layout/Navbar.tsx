@@ -66,12 +66,12 @@ export default function Navbar() {
               <span
                 className={cn(
                   "font-serif text-xl font-bold tracking-tight transition-colors",
-                  isScrolled ? "text-brand-navy" : "text-white"
+                  isScrolled ? "text-brand-charcoal" : "text-white"
                 )}
               >
                 Groupe Laporte
               </span>
-              <span className="text-xs font-sans font-medium tracking-widest uppercase text-brand-gold">
+              <span className="text-xs font-sans font-medium tracking-widest uppercase text-brand-copper">
                 {t("tagline")}
               </span>
             </div>
@@ -86,7 +86,7 @@ export default function Navbar() {
                 className={cn(
                   "px-4 py-2 rounded-md text-sm font-medium transition-colors",
                   isScrolled
-                    ? "text-brand-dark hover:text-brand-navy hover:bg-brand-cream"
+                    ? "text-brand-dark hover:text-brand-charcoal hover:bg-brand-cream"
                     : "text-white/90 hover:text-white hover:bg-white/10"
                 )}
               >
@@ -102,7 +102,7 @@ export default function Navbar() {
                 className={cn(
                   "flex items-center gap-1 px-4 py-2 rounded-md text-sm font-medium transition-colors",
                   isScrolled
-                    ? "text-brand-dark hover:text-brand-navy hover:bg-brand-cream"
+                    ? "text-brand-dark hover:text-brand-charcoal hover:bg-brand-cream"
                     : "text-white/90 hover:text-white hover:bg-white/10"
                 )}
               >
@@ -124,7 +124,7 @@ export default function Navbar() {
                     <Link
                       key={service.href}
                       href={service.href}
-                      className="block px-4 py-3 text-sm text-brand-dark hover:bg-brand-cream hover:text-brand-navy transition-colors"
+                      className="block px-4 py-3 text-sm text-brand-dark hover:bg-brand-cream hover:text-brand-charcoal transition-colors"
                       onClick={() => setServicesOpen(false)}
                     >
                       {service.label}
@@ -140,7 +140,7 @@ export default function Navbar() {
               className={cn(
                 "flex items-center gap-1.5 px-3 py-2 text-sm font-medium transition-colors",
                 isScrolled
-                  ? "text-brand-dark hover:text-brand-navy"
+                  ? "text-brand-dark hover:text-brand-charcoal"
                   : "text-white/80 hover:text-white"
               )}
             >
@@ -154,7 +154,7 @@ export default function Navbar() {
               className={cn(
                 "px-3 py-1.5 rounded-full text-xs font-bold border transition-colors",
                 isScrolled
-                  ? "border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white"
+                  ? "border-brand-charcoal text-brand-charcoal hover:bg-brand-charcoal hover:text-white"
                   : "border-white/60 text-white hover:border-white hover:bg-white/10"
               )}
             >
@@ -164,7 +164,7 @@ export default function Navbar() {
             {/* CTA */}
             <Link
               href="/contact"
-              className="ml-2 px-5 py-2.5 bg-brand-gold text-white text-sm font-semibold rounded-full hover:bg-brand-gold-dark transition-colors shadow-sm"
+              className="ml-2 px-5 py-2.5 bg-brand-copper text-white text-sm font-semibold rounded-full hover:bg-brand-copper-dark transition-colors shadow-sm"
             >
               {t("contact")}
             </Link>
@@ -177,7 +177,7 @@ export default function Navbar() {
               className={cn(
                 "px-3 py-1 rounded-full text-xs font-bold border transition-colors",
                 isScrolled
-                  ? "border-brand-navy text-brand-navy"
+                  ? "border-brand-charcoal text-brand-charcoal"
                   : "border-white text-white"
               )}
             >
@@ -211,7 +211,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block px-4 py-3.5 text-brand-dark font-medium hover:bg-brand-cream hover:text-brand-navy rounded-lg transition-colors"
+                className="block px-4 py-3.5 text-brand-dark font-medium hover:bg-brand-cream hover:text-brand-charcoal rounded-lg transition-colors"
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}
@@ -226,7 +226,7 @@ export default function Navbar() {
                 <Link
                   key={service.href}
                   href={service.href}
-                  className="block px-6 py-3 text-sm text-brand-dark hover:bg-brand-cream hover:text-brand-navy rounded-lg transition-colors"
+                  className="block px-6 py-3 text-sm text-brand-dark hover:bg-brand-cream hover:text-brand-charcoal rounded-lg transition-colors"
                   onClick={() => setMobileOpen(false)}
                 >
                   {service.label}
@@ -239,12 +239,12 @@ export default function Navbar() {
                 href="tel:15144000671"
                 className="flex items-center gap-2 px-4 py-3 text-brand-dark"
               >
-                <Phone className="w-4 h-4 text-brand-gold" />
+                <Phone className="w-4 h-4 text-brand-copper" />
                 <span>1 514 400-0671</span>
               </a>
               <Link
                 href="/contact"
-                className="mt-3 flex items-center justify-center px-6 py-3.5 bg-brand-gold text-white font-semibold rounded-full hover:bg-brand-gold-dark transition-colors"
+                className="mt-3 flex items-center justify-center px-6 py-3.5 bg-brand-copper text-white font-semibold rounded-full hover:bg-brand-copper-dark transition-colors"
                 onClick={() => setMobileOpen(false)}
               >
                 {t("contact")}

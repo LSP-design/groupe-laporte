@@ -19,7 +19,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-brand-navy text-white">
+    <footer className="bg-brand-charcoal text-white">
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -29,7 +29,7 @@ export default function Footer() {
               <p className="font-serif text-xl font-bold text-white">
                 Groupe Laporte
               </p>
-              <p className="text-brand-gold text-xs font-medium tracking-widest uppercase mt-0.5">
+              <p className="text-brand-copper text-xs font-medium tracking-widest uppercase mt-0.5">
                 {t("nav.tagline")}
               </p>
             </div>
@@ -41,7 +41,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/company/groupe-laporte"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-white/20 text-white/70 hover:border-brand-gold hover:text-brand-gold transition-colors"
+                className="inline-flex items-center justify-center w-9 h-9 rounded-full border border-white/20 text-white/70 hover:border-brand-copper hover:text-brand-copper transition-colors"
                 aria-label="LinkedIn"
               >
                 {/* LinkedIn icon */}
@@ -54,7 +54,7 @@ export default function Footer() {
 
           {/* Navigation */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-widest text-brand-gold mb-4">
+            <h3 className="text-sm font-semibold uppercase tracking-widest text-brand-copper mb-4">
               {t("footer.navigation_title")}
             </h3>
             <ul className="space-y-2.5">
@@ -73,7 +73,7 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-widest text-brand-gold mb-4">
+            <h3 className="text-sm font-semibold uppercase tracking-widest text-brand-copper mb-4">
               {t("footer.services_title")}
             </h3>
             <ul className="space-y-2.5">
@@ -92,7 +92,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-widest text-brand-gold mb-4">
+            <h3 className="text-sm font-semibold uppercase tracking-widest text-brand-copper mb-4">
               {t("footer.contact_title")}
             </h3>
             <ul className="space-y-3">
@@ -101,7 +101,7 @@ export default function Footer() {
                   href="tel:15144000671"
                   className="flex items-center gap-2.5 text-white/70 hover:text-white text-sm transition-colors group"
                 >
-                  <Phone className="w-4 h-4 text-brand-gold flex-shrink-0" />
+                  <Phone className="w-4 h-4 text-brand-copper flex-shrink-0" />
                   <span>1 514 400-0671</span>
                 </a>
               </li>
@@ -110,12 +110,12 @@ export default function Footer() {
                   href="mailto:info@groupelaporte.ca"
                   className="flex items-center gap-2.5 text-white/70 hover:text-white text-sm transition-colors"
                 >
-                  <Mail className="w-4 h-4 text-brand-gold flex-shrink-0" />
+                  <Mail className="w-4 h-4 text-brand-copper flex-shrink-0" />
                   <span>info@groupelaporte.ca</span>
                 </a>
               </li>
               <li className="flex items-center gap-2.5 text-white/70 text-sm">
-                <MapPin className="w-4 h-4 text-brand-gold flex-shrink-0" />
+                <MapPin className="w-4 h-4 text-brand-copper flex-shrink-0" />
                 <span>Montréal, Canada</span>
               </li>
             </ul>

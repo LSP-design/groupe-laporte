@@ -30,7 +30,7 @@ export default async function GestionDeViePage({
       title: t("pillar_1_title"),
       desc: t("pillar_1_desc"),
       color: "bg-blue-50",
-      iconBg: "bg-brand-navy",
+      iconBg: "bg-brand-charcoal",
     },
     {
       icon: Heart,
@@ -44,7 +44,7 @@ export default async function GestionDeViePage({
       title: t("pillar_3_title"),
       desc: t("pillar_3_desc"),
       color: "bg-amber-50",
-      iconBg: "bg-brand-gold",
+      iconBg: "bg-brand-copper",
     },
   ];
 
@@ -69,17 +69,17 @@ export default async function GestionDeViePage({
   return (
     <>
       {/* Header */}
-      <section className="bg-brand-navy pt-32 pb-24 relative overflow-hidden">
+      <section className="bg-brand-charcoal pt-32 pb-24 relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-10"
           style={{
             backgroundImage:
-              "radial-gradient(circle at 80% 30%, #C9A84C 0%, transparent 50%)",
+              "radial-gradient(circle at 80% 30%, #B87333 0%, transparent 50%)",
           }}
         />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <span className="inline-block bg-brand-gold/20 text-brand-gold text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
+            <span className="inline-block bg-brand-copper/20 text-brand-copper text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
               {t("eyebrow")}
             </span>
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
@@ -99,10 +99,10 @@ export default async function GestionDeViePage({
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal">
               {t("pillars_title")}
             </h2>
-            <div className="w-12 h-1 bg-brand-gold mx-auto mt-4 rounded-full" />
+            <div className="w-12 h-1 bg-brand-copper mx-auto mt-4 rounded-full" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -118,7 +118,7 @@ export default async function GestionDeViePage({
                   >
                     <Icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="font-serif text-2xl font-bold text-brand-navy mb-3">
+                  <h3 className="font-serif text-2xl font-bold text-brand-charcoal mb-3">
                     {pillar.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed text-sm">
@@ -136,10 +136,10 @@ export default async function GestionDeViePage({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-brand-gold text-sm font-semibold uppercase tracking-widest">
+              <span className="text-brand-copper text-sm font-semibold uppercase tracking-widest">
                 {t("format_title")}
               </span>
-              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-navy mt-3 mb-8">
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal mt-3 mb-8">
                 {t("format_heading")}
               </h2>
               <div className="space-y-6">
@@ -147,11 +147,11 @@ export default async function GestionDeViePage({
                   const Icon = format.icon;
                   return (
                     <div key={format.title} className="flex gap-5">
-                      <div className="w-11 h-11 rounded-xl bg-brand-navy flex-shrink-0 flex items-center justify-center">
-                        <Icon className="w-5 h-5 text-brand-gold" />
+                      <div className="w-11 h-11 rounded-xl bg-brand-charcoal flex-shrink-0 flex items-center justify-center">
+                        <Icon className="w-5 h-5 text-brand-copper" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-brand-navy mb-1">
+                        <h3 className="font-semibold text-brand-charcoal mb-1">
                           {format.title}
                         </h3>
                         <p className="text-gray-600 text-sm leading-relaxed">
@@ -165,11 +165,11 @@ export default async function GestionDeViePage({
             </div>
 
             {/* Impact stat */}
-            <div className="bg-brand-navy rounded-3xl p-12 text-center">
-              <div className="w-16 h-16 rounded-full bg-brand-gold/20 flex items-center justify-center mx-auto mb-6">
-                <Heart className="w-8 h-8 text-brand-gold" />
+            <div className="bg-brand-charcoal rounded-3xl p-12 text-center">
+              <div className="w-16 h-16 rounded-full bg-brand-copper/20 flex items-center justify-center mx-auto mb-6">
+                <Heart className="w-8 h-8 text-brand-copper" />
               </div>
-              <h3 className="text-brand-gold text-sm font-semibold uppercase tracking-widest mb-4">
+              <h3 className="text-brand-copper text-sm font-semibold uppercase tracking-widest mb-4">
                 {t("impact_title")}
               </h3>
               <p className="font-serif text-8xl font-bold text-white mb-3">
@@ -186,13 +186,13 @@ export default async function GestionDeViePage({
       {/* CTA */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-navy mb-4">
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal mb-4">
             {t("cta_title")}
           </h2>
           <p className="text-gray-600 mb-8 max-w-xl mx-auto">{t("cta_desc")}</p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-brand-navy text-white font-semibold rounded-full hover:bg-brand-navy-dark transition-all shadow-lg"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-brand-charcoal text-white font-semibold rounded-full hover:bg-brand-charcoal-dark transition-all shadow-lg"
           >
             {t("cta_button")}
             <ArrowRight className="w-4 h-4" />

@@ -64,15 +64,15 @@ export default function ContactPage() {
   return (
     <>
       {/* Header */}
-      <section className="bg-brand-navy pt-32 pb-20">
+      <section className="bg-brand-charcoal pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-brand-gold text-sm font-semibold uppercase tracking-widest">
+          <span className="text-brand-copper text-sm font-semibold uppercase tracking-widest">
             {t("title")}
           </span>
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-3 mb-4">
             {t("subtitle")}
           </h1>
-          <div className="w-16 h-1 bg-brand-gold mx-auto rounded-full" />
+          <div className="w-16 h-1 bg-brand-copper mx-auto rounded-full" />
         </div>
       </section>
 
@@ -82,7 +82,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Contact Info */}
             <div className="lg:col-span-1">
-              <h2 className="font-serif text-2xl font-bold text-brand-navy mb-6">
+              <h2 className="font-serif text-2xl font-bold text-brand-charcoal mb-6">
                 {t("info_title")}
               </h2>
               <div className="space-y-4">
@@ -90,8 +90,8 @@ export default function ContactPage() {
                   const Icon = item.icon;
                   const content = (
                     <div className="flex items-start gap-3.5 p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                      <div className="w-10 h-10 rounded-lg bg-brand-navy flex items-center justify-center flex-shrink-0">
-                        <Icon className="w-4 h-4 text-brand-gold" />
+                      <div className="w-10 h-10 rounded-lg bg-brand-charcoal flex items-center justify-center flex-shrink-0">
+                        <Icon className="w-4 h-4 text-brand-copper" />
                       </div>
                       <span className="text-gray-700 text-sm pt-2.5 leading-snug">
                         {item.label}
@@ -99,7 +99,7 @@ export default function ContactPage() {
                     </div>
                   );
                   return item.href ? (
-                    <a key={item.label} href={item.href} className="block hover:text-brand-navy transition-colors">
+                    <a key={item.label} href={item.href} className="block hover:text-brand-charcoal transition-colors">
                       {content}
                     </a>
                   ) : (
@@ -109,7 +109,7 @@ export default function ContactPage() {
               </div>
 
               {/* Mission statement */}
-              <div className="mt-8 bg-brand-navy rounded-2xl p-6">
+              <div className="mt-8 bg-brand-charcoal rounded-2xl p-6">
                 <p className="font-serif text-xl font-bold text-white mb-3">
                   Groupe Laporte
                 </p>
@@ -126,7 +126,7 @@ export default function ContactPage() {
                   <div className="w-16 h-16 rounded-full bg-green-50 flex items-center justify-center mx-auto mb-6">
                     <CheckCircle2 className="w-8 h-8 text-green-600" />
                   </div>
-                  <h2 className="font-serif text-2xl font-bold text-brand-navy mb-3">
+                  <h2 className="font-serif text-2xl font-bold text-brand-charcoal mb-3">
                     {t("success_title")}
                   </h2>
                   <p className="text-gray-600 max-w-md mx-auto leading-relaxed">
@@ -135,14 +135,14 @@ export default function ContactPage() {
                 </div>
               ) : (
                 <div className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100">
-                  <h2 className="font-serif text-2xl font-bold text-brand-navy mb-8">
+                  <h2 className="font-serif text-2xl font-bold text-brand-charcoal mb-8">
                     {t("form_title")}
                   </h2>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                          {t("form_name")} <span className="text-brand-gold">*</span>
+                          {t("form_name")} <span className="text-brand-copper">*</span>
                         </label>
                         <input
                           type="text"
@@ -151,12 +151,12 @@ export default function ContactPage() {
                           value={form.name}
                           onChange={handleChange}
                           placeholder={t("form_name_placeholder")}
-                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-navy focus:ring-2 focus:ring-brand-navy/10 outline-none transition-all text-sm"
+                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-charcoal focus:ring-2 focus:ring-brand-charcoal/10 outline-none transition-all text-sm"
                         />
                       </div>
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                          {t("form_email")} <span className="text-brand-gold">*</span>
+                          {t("form_email")} <span className="text-brand-copper">*</span>
                         </label>
                         <input
                           type="email"
@@ -165,7 +165,7 @@ export default function ContactPage() {
                           value={form.email}
                           onChange={handleChange}
                           placeholder={t("form_email_placeholder")}
-                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-navy focus:ring-2 focus:ring-brand-navy/10 outline-none transition-all text-sm"
+                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-charcoal focus:ring-2 focus:ring-brand-charcoal/10 outline-none transition-all text-sm"
                         />
                       </div>
                       <div>
@@ -178,7 +178,7 @@ export default function ContactPage() {
                           value={form.phone}
                           onChange={handleChange}
                           placeholder={t("form_phone_placeholder")}
-                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-navy focus:ring-2 focus:ring-brand-navy/10 outline-none transition-all text-sm"
+                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-charcoal focus:ring-2 focus:ring-brand-charcoal/10 outline-none transition-all text-sm"
                         />
                       </div>
                       <div>
@@ -191,7 +191,7 @@ export default function ContactPage() {
                           value={form.company}
                           onChange={handleChange}
                           placeholder={t("form_company_placeholder")}
-                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-navy focus:ring-2 focus:ring-brand-navy/10 outline-none transition-all text-sm"
+                          className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-charcoal focus:ring-2 focus:ring-brand-charcoal/10 outline-none transition-all text-sm"
                         />
                       </div>
                     </div>
@@ -204,7 +204,7 @@ export default function ContactPage() {
                         name="service"
                         value={form.service}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-navy focus:ring-2 focus:ring-brand-navy/10 outline-none transition-all text-sm bg-white"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-charcoal focus:ring-2 focus:ring-brand-charcoal/10 outline-none transition-all text-sm bg-white"
                       >
                         <option value="">{t("select_service")}</option>
                         {services.map((s) => (
@@ -217,7 +217,7 @@ export default function ContactPage() {
 
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                        {t("form_message")} <span className="text-brand-gold">*</span>
+                        {t("form_message")} <span className="text-brand-copper">*</span>
                       </label>
                       <textarea
                         name="message"
@@ -226,7 +226,7 @@ export default function ContactPage() {
                         value={form.message}
                         onChange={handleChange}
                         placeholder={t("form_message_placeholder")}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-navy focus:ring-2 focus:ring-brand-navy/10 outline-none transition-all text-sm resize-none"
+                        className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-charcoal focus:ring-2 focus:ring-brand-charcoal/10 outline-none transition-all text-sm resize-none"
                       />
                     </div>
 
@@ -239,7 +239,7 @@ export default function ContactPage() {
                     <button
                       type="submit"
                       disabled={status === "sending"}
-                      className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-brand-navy text-white font-semibold rounded-full hover:bg-brand-navy-dark transition-all disabled:opacity-60 disabled:cursor-not-allowed shadow-lg"
+                      className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-brand-charcoal text-white font-semibold rounded-full hover:bg-brand-charcoal-dark transition-all disabled:opacity-60 disabled:cursor-not-allowed shadow-lg"
                     >
                       {status === "sending" ? (
                         <>
@@ -258,7 +258,7 @@ export default function ContactPage() {
                       {t("form_consent_pre")}{" "}
                       <Link
                         href="/confidentialite"
-                        className="underline hover:text-brand-navy"
+                        className="underline hover:text-brand-charcoal"
                       >
                         {t("form_consent_link")}
                       </Link>

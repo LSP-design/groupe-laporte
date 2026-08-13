@@ -73,9 +73,9 @@ export default async function ServicesPage({
   return (
     <>
       {/* Header */}
-      <section className="bg-brand-navy pt-32 pb-20">
+      <section className="bg-brand-charcoal pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-brand-gold text-sm font-semibold uppercase tracking-widest">
+          <span className="text-brand-copper text-sm font-semibold uppercase tracking-widest">
             {t("services_page.title")}
           </span>
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-3 mb-5">
@@ -106,16 +106,16 @@ export default async function ServicesPage({
                   {/* Content */}
                   <div className="p-10 lg:p-14 flex flex-col justify-center">
                     <div className="flex items-center gap-3 mb-6">
-                      <div className="w-12 h-12 rounded-xl bg-brand-navy flex items-center justify-center">
-                        <Icon className="w-6 h-6 text-brand-gold" />
+                      <div className="w-12 h-12 rounded-xl bg-brand-charcoal flex items-center justify-center">
+                        <Icon className="w-6 h-6 text-brand-copper" />
                       </div>
                       {service.badge && (
-                        <span className="px-3 py-1 bg-brand-gold text-white text-xs font-bold rounded-full uppercase tracking-wider">
+                        <span className="px-3 py-1 bg-brand-copper text-white text-xs font-bold rounded-full uppercase tracking-wider">
                           {service.badge}
                         </span>
                       )}
                     </div>
-                    <h2 className="font-serif text-3xl font-bold text-brand-navy mb-4">
+                    <h2 className="font-serif text-3xl font-bold text-brand-charcoal mb-4">
                       {service.title}
                     </h2>
                     <p className="text-gray-600 leading-relaxed mb-8">
@@ -123,7 +123,7 @@ export default async function ServicesPage({
                     </p>
                     <Link
                       href={service.href}
-                      className="inline-flex items-center gap-2 px-7 py-3.5 bg-brand-navy text-white font-semibold rounded-full hover:bg-brand-navy-dark transition-all self-start"
+                      className="inline-flex items-center gap-2 px-7 py-3.5 bg-brand-charcoal text-white font-semibold rounded-full hover:bg-brand-charcoal-dark transition-all self-start"
                     >
                       {t("services.learn_more")}
                       <ArrowRight className="w-4 h-4" />
@@ -132,7 +132,7 @@ export default async function ServicesPage({
 
                   {/* Features panel */}
                   <div className="bg-brand-cream p-10 lg:p-14 flex flex-col justify-center">
-                    <h3 className="text-sm font-semibold uppercase tracking-widest text-brand-gold mb-6">
+                    <h3 className="text-sm font-semibold uppercase tracking-widest text-brand-copper mb-6">
                       {t("services_page.key_points")}
                     </h3>
                     <ul className="space-y-3">
@@ -141,7 +141,7 @@ export default async function ServicesPage({
                           key={feature}
                           className="flex items-center gap-3 text-sm text-gray-700"
                         >
-                          <span className="w-1.5 h-1.5 rounded-full bg-brand-gold flex-shrink-0" />
+                          <span className="w-1.5 h-1.5 rounded-full bg-brand-copper flex-shrink-0" />
                           {feature}
                         </li>
                       ))}
@@ -157,7 +157,7 @@ export default async function ServicesPage({
       {/* CTA */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-navy mb-4">
+          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal mb-4">
             {t("cta_final.title")}
           </h2>
           <p className="text-gray-600 mb-8 max-w-xl mx-auto">
@@ -165,7 +165,7 @@ export default async function ServicesPage({
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-brand-gold text-white font-semibold rounded-full hover:bg-brand-gold-dark transition-all shadow-lg"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-brand-copper text-white font-semibold rounded-full hover:bg-brand-copper-dark transition-all shadow-lg"
           >
             {t("cta_final.button")}
             <ArrowRight className="w-4 h-4" />

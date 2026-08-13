@@ -45,7 +45,7 @@ export default function TeamAvatar({
     <div
       className={cn(
         className,
-        "bg-brand-navy flex items-center justify-center shadow-2xl flex-shrink-0"
+        "bg-brand-charcoal flex items-center justify-center shadow-2xl flex-shrink-0"
       )}
     >
       <span className={cn("font-serif font-bold text-white", textClassName)}>

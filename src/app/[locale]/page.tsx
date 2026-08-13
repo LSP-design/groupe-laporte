@@ -35,22 +35,22 @@ export default async function HomePage({
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-brand-gold text-sm font-semibold uppercase tracking-widest">
+            <span className="text-brand-copper text-sm font-semibold uppercase tracking-widest">
               {t("services.title")}
             </span>
-            <h2 className="font-serif text-4xl sm:text-5xl font-bold text-brand-navy mt-3 mb-5">
+            <h2 className="font-serif text-4xl sm:text-5xl font-bold text-brand-charcoal mt-3 mb-5">
               {t("services.subtitle")}
             </h2>
-            <div className="w-16 h-1 bg-brand-gold mx-auto rounded-full" />
+            <div className="w-16 h-1 bg-brand-copper mx-auto rounded-full" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Consultation */}
-            <div className="group relative bg-brand-cream rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-brand-gold/20">
-              <div className="w-12 h-12 rounded-xl bg-brand-navy/10 flex items-center justify-center mb-6">
-                <Star className="w-6 h-6 text-brand-navy" />
+            <div className="group relative bg-brand-cream rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-brand-copper/20">
+              <div className="w-12 h-12 rounded-xl bg-brand-charcoal/10 flex items-center justify-center mb-6">
+                <Star className="w-6 h-6 text-brand-charcoal" />
               </div>
-              <h3 className="font-serif text-xl font-bold text-brand-navy mb-3">
+              <h3 className="font-serif text-xl font-bold text-brand-charcoal mb-3">
                 {t("services.consultation_title")}
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
@@ -58,7 +58,7 @@ export default async function HomePage({
               </p>
               <Link
                 href="/services/consultation-coaching"
-                className="inline-flex items-center gap-1.5 text-brand-gold font-semibold text-sm hover:gap-2.5 transition-all"
+                className="inline-flex items-center gap-1.5 text-brand-copper font-semibold text-sm hover:gap-2.5 transition-all"
               >
                 {t("services.learn_more")}
                 <ArrowRight className="w-4 h-4" />
@@ -66,14 +66,14 @@ export default async function HomePage({
             </div>
 
             {/* CAPE — featured */}
-            <div className="group relative bg-brand-navy rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 ring-2 ring-brand-gold/40">
+            <div className="group relative bg-brand-charcoal rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 ring-2 ring-brand-copper/40">
               <div className="absolute top-6 right-6">
-                <span className="bg-brand-gold text-white text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                <span className="bg-brand-copper text-white text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
                   {t("services.badge_exclusive")}
                 </span>
               </div>
-              <div className="w-12 h-12 rounded-xl bg-brand-gold/20 flex items-center justify-center mb-6">
-                <Star className="w-6 h-6 text-brand-gold" />
+              <div className="w-12 h-12 rounded-xl bg-brand-copper/20 flex items-center justify-center mb-6">
+                <Star className="w-6 h-6 text-brand-copper" />
               </div>
               <h3 className="font-serif text-xl font-bold text-white mb-3">
                 {t("services.cape_title")}
@@ -83,7 +83,7 @@ export default async function HomePage({
               </p>
               <Link
                 href="/services/cape"
-                className="inline-flex items-center gap-1.5 text-brand-gold font-semibold text-sm hover:gap-2.5 transition-all"
+                className="inline-flex items-center gap-1.5 text-brand-copper font-semibold text-sm hover:gap-2.5 transition-all"
               >
                 {t("services.learn_more")}
                 <ArrowRight className="w-4 h-4" />
@@ -91,11 +91,11 @@ export default async function HomePage({
             </div>
 
             {/* Gestion de vie */}
-            <div className="group relative bg-brand-cream rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-brand-gold/20">
-              <div className="w-12 h-12 rounded-xl bg-brand-navy/10 flex items-center justify-center mb-6">
-                <Star className="w-6 h-6 text-brand-navy" />
+            <div className="group relative bg-brand-cream rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-brand-copper/20">
+              <div className="w-12 h-12 rounded-xl bg-brand-charcoal/10 flex items-center justify-center mb-6">
+                <Star className="w-6 h-6 text-brand-charcoal" />
               </div>
-              <h3 className="font-serif text-xl font-bold text-brand-navy mb-3">
+              <h3 className="font-serif text-xl font-bold text-brand-charcoal mb-3">
                 {t("services.gestion_title")}
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-6">
@@ -103,7 +103,7 @@ export default async function HomePage({
               </p>
               <Link
                 href="/services/gestion-de-vie"
-                className="inline-flex items-center gap-1.5 text-brand-gold font-semibold text-sm hover:gap-2.5 transition-all"
+                className="inline-flex items-center gap-1.5 text-brand-copper font-semibold text-sm hover:gap-2.5 transition-all"
               >
                 {t("services.learn_more")}
                 <ArrowRight className="w-4 h-4" />
@@ -118,10 +118,10 @@ export default async function HomePage({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-brand-gold text-sm font-semibold uppercase tracking-widest">
+              <span className="text-brand-copper text-sm font-semibold uppercase tracking-widest">
                 {t("cape_section.eyebrow")}
               </span>
-              <h2 className="font-serif text-4xl sm:text-5xl font-bold text-brand-navy mt-3 mb-6">
+              <h2 className="font-serif text-4xl sm:text-5xl font-bold text-brand-charcoal mt-3 mb-6">
                 {t("cape_section.title")}
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed mb-8">
@@ -137,14 +137,14 @@ export default async function HomePage({
                   t("cape_section.feature6"),
                 ].map((feature) => (
                   <div key={feature} className="flex items-center gap-2.5">
-                    <CheckCircle2 className="w-5 h-5 text-brand-gold flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-brand-copper flex-shrink-0" />
                     <span className="text-sm text-gray-700">{feature}</span>
                   </div>
                 ))}
               </div>
               <Link
                 href="/services/cape"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-brand-navy text-white font-semibold rounded-full hover:bg-brand-navy-dark transition-all shadow-lg hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-brand-charcoal text-white font-semibold rounded-full hover:bg-brand-charcoal-dark transition-all shadow-lg hover:-translate-y-0.5"
               >
                 {t("cape_section.cta")}
                 <ArrowRight className="w-4 h-4" />
@@ -158,7 +158,7 @@ export default async function HomePage({
                   <p className="text-gray-500 text-sm uppercase tracking-widest mb-2">
                     {t("cape_section.investment_label")}
                   </p>
-                  <p className="font-serif text-5xl font-bold text-brand-navy">
+                  <p className="font-serif text-5xl font-bold text-brand-charcoal">
                     {t("cape_page.price")}
                   </p>
                   <p className="text-gray-400 text-sm mt-1">
@@ -179,7 +179,7 @@ export default async function HomePage({
                       <span className="text-gray-500 text-sm">
                         {item.label}
                       </span>
-                      <span className="font-serif text-xl font-bold text-brand-navy">
+                      <span className="font-serif text-xl font-bold text-brand-charcoal">
                         {item.value}
                       </span>
                     </div>
@@ -187,8 +187,8 @@ export default async function HomePage({
                 </div>
               </div>
               {/* Decorative accent */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-brand-gold/10 rounded-full -z-10" />
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-brand-navy/10 rounded-full -z-10" />
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-brand-copper/10 rounded-full -z-10" />
+              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-brand-charcoal/10 rounded-full -z-10" />
             </div>
           </div>
         </div>
@@ -198,13 +198,13 @@ export default async function HomePage({
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-brand-gold text-sm font-semibold uppercase tracking-widest">
+            <span className="text-brand-copper text-sm font-semibold uppercase tracking-widest">
               {t("team_preview.title")}
             </span>
-            <h2 className="font-serif text-4xl sm:text-5xl font-bold text-brand-navy mt-3 mb-5">
+            <h2 className="font-serif text-4xl sm:text-5xl font-bold text-brand-charcoal mt-3 mb-5">
               {t("team_preview.subtitle")}
             </h2>
-            <div className="w-16 h-1 bg-brand-gold mx-auto rounded-full" />
+            <div className="w-16 h-1 bg-brand-copper mx-auto rounded-full" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -240,13 +240,13 @@ export default async function HomePage({
                     name={member.name}
                     initials={member.initials}
                     photo={member.photo}
-                    className="w-24 h-24 rounded-full mx-auto group-hover:bg-brand-gold transition-colors duration-300"
+                    className="w-24 h-24 rounded-full mx-auto group-hover:bg-brand-copper transition-colors duration-300"
                   />
                 </div>
-                <h3 className="font-serif text-xl font-bold text-brand-navy mb-1">
+                <h3 className="font-serif text-xl font-bold text-brand-charcoal mb-1">
                   {member.name}
                 </h3>
-                <p className="text-brand-gold text-sm font-semibold uppercase tracking-wide mb-3">
+                <p className="text-brand-copper text-sm font-semibold uppercase tracking-wide mb-3">
                   {member.role}
                 </p>
                 <p className="text-gray-600 text-sm leading-relaxed max-w-xs mx-auto">
@@ -259,7 +259,7 @@ export default async function HomePage({
           <div className="text-center">
             <Link
               href="/l-equipe"
-              className="inline-flex items-center gap-2 text-brand-navy font-semibold hover:text-brand-gold transition-colors"
+              className="inline-flex items-center gap-2 text-brand-charcoal font-semibold hover:text-brand-copper transition-colors"
             >
               {t("team_preview.meet_team")}
               <ArrowRight className="w-4 h-4" />
@@ -269,16 +269,16 @@ export default async function HomePage({
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-brand-navy">
+      <section className="py-24 bg-brand-charcoal">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-brand-gold text-sm font-semibold uppercase tracking-widest">
+            <span className="text-brand-copper text-sm font-semibold uppercase tracking-widest">
               {t("testimonials.title")}
             </span>
             <h2 className="font-serif text-4xl sm:text-5xl font-bold text-white mt-3 mb-5">
               {t("testimonials.subtitle")}
             </h2>
-            <div className="w-16 h-1 bg-brand-gold mx-auto rounded-full" />
+            <div className="w-16 h-1 bg-brand-copper mx-auto rounded-full" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -298,12 +298,12 @@ export default async function HomePage({
                 key={testimonial.author}
                 className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors"
               >
-                <Quote className="w-8 h-8 text-brand-gold mb-5 opacity-70" />
+                <Quote className="w-8 h-8 text-brand-copper mb-5 opacity-70" />
                 <p className="text-white/90 text-lg leading-relaxed mb-6 italic">
                   &ldquo;{testimonial.quote}&rdquo;
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-px bg-brand-gold" />
+                  <div className="w-10 h-px bg-brand-copper" />
                   <div>
                     <p className="text-white font-semibold text-sm">
                       {testimonial.author}
@@ -320,10 +320,10 @@ export default async function HomePage({
       {/* Final CTA */}
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-brand-gold text-sm font-semibold uppercase tracking-widest">
+          <span className="text-brand-copper text-sm font-semibold uppercase tracking-widest">
             {t("cta_final.eyebrow")}
           </span>
-          <h2 className="font-serif text-4xl sm:text-5xl font-bold text-brand-navy mt-3 mb-5">
+          <h2 className="font-serif text-4xl sm:text-5xl font-bold text-brand-charcoal mt-3 mb-5">
             {t("cta_final.title")}
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
@@ -331,7 +331,7 @@ export default async function HomePage({
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-10 py-5 bg-brand-navy text-white font-semibold rounded-full hover:bg-brand-navy-dark transition-all shadow-xl hover:-translate-y-1 text-lg"
+            className="inline-flex items-center gap-2 px-10 py-5 bg-brand-charcoal text-white font-semibold rounded-full hover:bg-brand-charcoal-dark transition-all shadow-xl hover:-translate-y-1 text-lg"
           >
             {t("cta_final.button")}
             <ArrowRight className="w-5 h-5" />

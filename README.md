@@ -90,10 +90,10 @@ vercel deploy
 
 | Nom | Hex | Usage |
 |---|---|---|
-| Navy | `#1B2B5E` | Couleur principale, textes |
-| Gold | `#C9A84C` | Accents, CTAs |
-| Cream | `#F8F7F4` | Arrière-plans sections |
-| Dark | `#1A1A1A` | Texte corps |
+| Charcoal | `#2A2826` | Couleur principale, textes |
+| Copper | `#B87333` | Accents, CTAs |
+| Cream | `#F7F4F0` | Arrière-plans sections |
+| Dark | `#1E1C1A` | Texte corps |
 
 ## Contact client
 

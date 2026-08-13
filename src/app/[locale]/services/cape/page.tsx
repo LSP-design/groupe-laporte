@@ -54,17 +54,17 @@ export default async function CapePage({
   return (
     <>
       {/* Header */}
-      <section className="bg-brand-navy pt-32 pb-24 relative overflow-hidden">
+      <section className="bg-brand-charcoal pt-32 pb-24 relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-10"
           style={{
             backgroundImage:
-              "radial-gradient(circle at 70% 50%, #C9A84C 0%, transparent 60%)",
+              "radial-gradient(circle at 70% 50%, #B87333 0%, transparent 60%)",
           }}
         />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <span className="inline-block bg-brand-gold/20 text-brand-gold text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
+            <span className="inline-block bg-brand-copper/20 text-brand-copper text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
               {t("eyebrow")}
             </span>
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
@@ -84,10 +84,10 @@ export default async function CapePage({
       <section className="py-24 bg-brand-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-navy">
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal">
               {t("structure_title")}
             </h2>
-            <div className="w-12 h-1 bg-brand-gold mx-auto mt-4 rounded-full" />
+            <div className="w-12 h-1 bg-brand-copper mx-auto mt-4 rounded-full" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {structure.map((item) => {
@@ -97,10 +97,10 @@ export default async function CapePage({
                   key={item.title}
                   className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-brand-navy flex items-center justify-center mb-5">
-                    <Icon className="w-6 h-6 text-brand-gold" />
+                  <div className="w-12 h-12 rounded-xl bg-brand-charcoal flex items-center justify-center mb-5">
+                    <Icon className="w-6 h-6 text-brand-copper" />
                   </div>
-                  <h3 className="font-serif text-xl font-bold text-brand-navy mb-3">
+                  <h3 className="font-serif text-xl font-bold text-brand-charcoal mb-3">
                     {item.title}
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
@@ -119,21 +119,21 @@ export default async function CapePage({
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             {/* Benefits */}
             <div>
-              <h2 className="font-serif text-3xl font-bold text-brand-navy mb-8">
+              <h2 className="font-serif text-3xl font-bold text-brand-charcoal mb-8">
                 {t("benefits_title")}
               </h2>
               <ul className="space-y-4">
                 {benefits.map((benefit) => (
                   <li key={benefit} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-brand-gold flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-brand-copper flex-shrink-0 mt-0.5" />
                     <span className="text-gray-700">{benefit}</span>
                   </li>
                 ))}
               </ul>
 
               {/* Confidentiality note */}
-              <div className="mt-10 bg-brand-navy rounded-2xl p-6 flex gap-4">
-                <Shield className="w-6 h-6 text-brand-gold flex-shrink-0 mt-0.5" />
+              <div className="mt-10 bg-brand-charcoal rounded-2xl p-6 flex gap-4">
+                <Shield className="w-6 h-6 text-brand-copper flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="font-semibold text-white text-sm mb-1">
                     {t("confidentiality_title")}
@@ -146,13 +146,13 @@ export default async function CapePage({
             </div>
 
             {/* Investment card */}
-            <div className="bg-brand-cream rounded-3xl p-10 border border-brand-gold/20">
-              <h2 className="font-serif text-2xl font-bold text-brand-navy mb-8">
+            <div className="bg-brand-cream rounded-3xl p-10 border border-brand-copper/20">
+              <h2 className="font-serif text-2xl font-bold text-brand-charcoal mb-8">
                 {t("investment_title")}
               </h2>
 
-              <div className="text-center py-8 border-b border-brand-gold/20 mb-8">
-                <p className="font-serif text-6xl font-bold text-brand-navy mb-2">
+              <div className="text-center py-8 border-b border-brand-copper/20 mb-8">
+                <p className="font-serif text-6xl font-bold text-brand-charcoal mb-2">
                   {t("price")}
                 </p>
                 <p className="text-gray-500 text-sm">{t("price_desc")}</p>
@@ -170,22 +170,22 @@ export default async function CapePage({
                     className="flex justify-between items-center"
                   >
                     <span className="text-gray-600 text-sm">{row.label}</span>
-                    <span className="font-semibold text-brand-navy text-sm">
+                    <span className="font-semibold text-brand-charcoal text-sm">
                       {row.value}
                     </span>
                   </div>
                 ))}
               </div>
 
-              <div className="bg-brand-gold/10 rounded-xl p-4 mb-8">
-                <p className="text-brand-navy font-semibold text-sm text-center">
+              <div className="bg-brand-copper/10 rounded-xl p-4 mb-8">
+                <p className="text-brand-charcoal font-semibold text-sm text-center">
                   {t("roi_note")}
                 </p>
               </div>
 
               <Link
                 href="/contact"
-                className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-brand-navy text-white font-semibold rounded-full hover:bg-brand-navy-dark transition-all"
+                className="flex items-center justify-center gap-2 w-full px-6 py-4 bg-brand-charcoal text-white font-semibold rounded-full hover:bg-brand-charcoal-dark transition-all"
               >
                 {t("cta_button")}
                 <ArrowRight className="w-4 h-4" />
@@ -196,7 +196,7 @@ export default async function CapePage({
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-brand-navy">
+      <section className="py-20 bg-brand-charcoal">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
             {t("cta_title")}
@@ -204,7 +204,7 @@ export default async function CapePage({
           <p className="text-white/70 mb-8 max-w-xl mx-auto">{t("cta_desc")}</p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-brand-gold text-white font-semibold rounded-full hover:bg-brand-gold-dark transition-all shadow-lg"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-brand-copper text-white font-semibold rounded-full hover:bg-brand-copper-dark transition-all shadow-lg"
           >
             {t("cta_button")}
             <ArrowRight className="w-4 h-4" />

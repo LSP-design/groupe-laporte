@@ -36,15 +36,15 @@ export default async function TeamPage({
   return (
     <>
       {/* Header */}
-      <section className="bg-brand-navy pt-32 pb-20">
+      <section className="bg-brand-charcoal pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-brand-gold text-sm font-semibold uppercase tracking-widest">
+          <span className="text-brand-copper text-sm font-semibold uppercase tracking-widest">
             {t("title")}
           </span>
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white mt-3 mb-4">
             {t("subtitle")}
           </h1>
-          <div className="w-16 h-1 bg-brand-gold mx-auto rounded-full" />
+          <div className="w-16 h-1 bg-brand-copper mx-auto rounded-full" />
         </div>
       </section>
 
@@ -60,22 +60,22 @@ export default async function TeamPage({
                 className="w-48 h-48 rounded-2xl mb-6"
                 textClassName="text-5xl"
               />
-              <h2 className="font-serif text-3xl font-bold text-brand-navy mb-1">
+              <h2 className="font-serif text-3xl font-bold text-brand-charcoal mb-1">
                 Jean Laporte
               </h2>
-              <p className="text-brand-gold font-semibold text-sm uppercase tracking-widest mb-6">
+              <p className="text-brand-copper font-semibold text-sm uppercase tracking-widest mb-6">
                 {t("jean_cred_1")}
               </p>
 
               {/* Credentials */}
               <div className="bg-brand-cream rounded-xl p-6 w-full max-w-sm">
-                <h3 className="font-semibold text-brand-navy text-sm uppercase tracking-wider mb-4">
+                <h3 className="font-semibold text-brand-charcoal text-sm uppercase tracking-wider mb-4">
                   {t("jean_credentials")}
                 </h3>
                 <ul className="space-y-2.5">
                   {credentials.map((cred) => (
                     <li key={cred} className="flex items-start gap-2.5">
-                      <CheckCircle2 className="w-4 h-4 text-brand-gold flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-brand-copper flex-shrink-0 mt-0.5" />
                       <span className="text-sm text-gray-700">{cred}</span>
                     </li>
                   ))}
@@ -106,9 +106,9 @@ export default async function TeamPage({
                 ].map((item) => (
                   <div
                     key={item.company}
-                    className="bg-brand-cream rounded-xl p-5 border-l-4 border-brand-gold"
+                    className="bg-brand-cream rounded-xl p-5 border-l-4 border-brand-copper"
                   >
-                    <p className="font-semibold text-brand-navy text-sm">
+                    <p className="font-semibold text-brand-charcoal text-sm">
                       {item.company}
                     </p>
                     <p className="text-gray-600 text-xs mt-1 whitespace-pre-line">
@@ -128,7 +128,7 @@ export default async function TeamPage({
       {/* Collaborators */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold text-brand-navy mb-12 text-center">
+          <h2 className="font-serif text-3xl font-bold text-brand-charcoal mb-12 text-center">
             {t("collaborators_title")}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
@@ -142,10 +142,10 @@ export default async function TeamPage({
                   textClassName="text-lg"
                 />
                 <div>
-                  <h3 className="font-serif text-xl font-bold text-brand-navy">
+                  <h3 className="font-serif text-xl font-bold text-brand-charcoal">
                     Jean-François Brault
                   </h3>
-                  <p className="text-brand-gold text-sm font-semibold uppercase tracking-wide">
+                  <p className="text-brand-copper text-sm font-semibold uppercase tracking-wide">
                     {t("jf_role")}
                   </p>
                 </div>
@@ -165,10 +165,10 @@ export default async function TeamPage({
                   textClassName="text-lg"
                 />
                 <div>
-                  <h3 className="font-serif text-xl font-bold text-brand-navy">
+                  <h3 className="font-serif text-xl font-bold text-brand-charcoal">
                     Kathryn Peterson
                   </h3>
-                  <p className="text-brand-gold text-sm font-semibold uppercase tracking-wide">
+                  <p className="text-brand-copper text-sm font-semibold uppercase tracking-wide">
                     {t("kathryn_role")}
                   </p>
                 </div>
@@ -182,7 +182,7 @@ export default async function TeamPage({
       </section>
 
       {/* Join CTA */}
-      <section className="py-16 bg-brand-navy">
+      <section className="py-16 bg-brand-charcoal">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl font-bold text-white mb-4">
             {t("collaborate")}
@@ -192,7 +192,7 @@ export default async function TeamPage({
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-brand-gold text-white font-semibold rounded-full hover:bg-brand-gold-dark transition-all"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-brand-copper text-white font-semibold rounded-full hover:bg-brand-copper-dark transition-all"
           >
             {t("collaborate_cta")}
             <ArrowRight className="w-4 h-4" />

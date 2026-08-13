@@ -2,14 +2,14 @@
 
 @theme {
   /* Brand colors */
-  --color-brand-navy: #1B2B5E;
-  --color-brand-gold: #C9A84C;
-  --color-brand-cream: #F8F7F4;
-  --color-brand-dark: #1A1A1A;
-  --color-brand-navy-light: #2a3f7e;
-  --color-brand-navy-dark: #111e42;
-  --color-brand-gold-light: #d9b96a;
-  --color-brand-gold-dark: #a8882e;
+  --color-brand-charcoal: #2A2826;
+  --color-brand-copper: #B87333;
+  --color-brand-cream: #F7F4F0;
+  --color-brand-dark: #1E1C1A;
+  --color-brand-charcoal-light: #4A4640;
+  --color-brand-charcoal-dark: #171513;
+  --color-brand-copper-light: #D19A66;
+  --color-brand-copper-dark: #8F5A28;
 
   /* Typography — self-hosted via next/font in layout.tsx */
   --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
@@ -29,7 +29,7 @@ html {
 
 body {
   background-color: #ffffff;
-  color: #1A1A1A;
+  color: #1E1C1A;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -43,6 +43,6 @@ button {
 
 /* Selection */
 ::selection {
-  background-color: #C9A84C;
-  color: #1B2B5E;
+  background-color: #B87333;
+  color: #2A2826;
 }

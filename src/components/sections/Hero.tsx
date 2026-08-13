@@ -10,13 +10,13 @@ export default function Hero() {
   const tStats = useTranslations("stats");
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-brand-navy">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-brand-charcoal">
       {/* Background texture */}
       <div
         className="absolute inset-0 opacity-10"
         style={{
-          backgroundImage: `radial-gradient(circle at 25% 25%, #C9A84C 0%, transparent 50%),
-                           radial-gradient(circle at 75% 75%, #2a3f7e 0%, transparent 50%)`,
+          backgroundImage: `radial-gradient(circle at 25% 25%, #B87333 0%, transparent 50%),
+                           radial-gradient(circle at 75% 75%, #4A4640 0%, transparent 50%)`,
         }}
       />
       {/* Grid pattern */}
@@ -38,8 +38,8 @@ export default function Hero() {
             transition={{ duration: 0.4 }}
             className="flex items-center gap-3 mb-8"
           >
-            <span className="block w-10 h-px bg-brand-gold" />
-            <span className="text-brand-gold text-sm font-semibold uppercase tracking-widest">
+            <span className="block w-10 h-px bg-brand-copper" />
+            <span className="text-brand-copper text-sm font-semibold uppercase tracking-widest">
               Montréal · Canada
             </span>
           </motion.div>
@@ -49,7 +49,7 @@ export default function Hero() {
           <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
             {t("title_line1")}
             <br />
-            <span className="text-brand-gold">{t("title_line2")}</span>
+            <span className="text-brand-copper">{t("title_line2")}</span>
           </h1>
 
           {/* Description */}
@@ -71,7 +71,7 @@ export default function Hero() {
           >
             <Link
               href="/services"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-brand-gold text-white font-semibold rounded-full hover:bg-brand-gold-dark transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-brand-copper text-white font-semibold rounded-full hover:bg-brand-copper-dark transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
             >
               {t("cta_primary")}
               <ArrowRight className="w-4 h-4" />
@@ -98,7 +98,7 @@ export default function Hero() {
               { value: tStats("item4_value"), label: tStats("item4_label") },
             ].map((stat) => (
               <div key={stat.label}>
-                <p className="font-serif text-3xl font-bold text-brand-gold">
+                <p className="font-serif text-3xl font-bold text-brand-copper">
                   {stat.value}
                 </p>
                 <p className="text-white/60 text-sm mt-0.5">{stat.label}</p>
