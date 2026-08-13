@@ -33,9 +33,9 @@ export default function Hero() {
         <div className="max-w-4xl">
           {/* Eyebrow */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            transition={{ duration: 0.4 }}
             className="flex items-center gap-3 mb-8"
           >
             <span className="block w-10 h-px bg-brand-gold" />
@@ -44,23 +44,19 @@ export default function Hero() {
             </span>
           </motion.div>
 
-          {/* Main heading */}
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6"
-          >
+          {/* Main heading — no entrance animation: this is the LCP element,
+              it must be visible immediately rather than wait on JS hydration */}
+          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
             {t("title_line1")}
             <br />
             <span className="text-brand-gold">{t("title_line2")}</span>
-          </motion.h1>
+          </h1>
 
           {/* Description */}
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.35 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
             className="text-white/80 text-lg sm:text-xl leading-relaxed max-w-2xl mb-10"
           >
             {t("description")}
@@ -68,9 +64,9 @@ export default function Hero() {
 
           {/* CTAs */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             className="flex flex-col sm:flex-row gap-4"
           >
             <Link
@@ -92,7 +88,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.7 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
             className="mt-16 pt-12 border-t border-white/10 flex flex-wrap gap-8"
           >
             {[
@@ -116,7 +112,7 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
+        transition={{ duration: 0.4, delay: 0.5 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
       >
         <motion.div
